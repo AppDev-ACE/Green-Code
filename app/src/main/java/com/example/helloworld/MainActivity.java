@@ -1,7 +1,9 @@
 package com.example.helloworld;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -13,6 +15,7 @@ import androidx.core.view.WindowInsetsCompat;
 public class MainActivity extends AppCompatActivity {
 
     public TextView txtHelloWorld;
+    public Button btnGoToApp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +29,15 @@ public class MainActivity extends AppCompatActivity {
         });
 
         txtHelloWorld = (TextView) findViewById(R.id.txtHelloWorld);
+        btnGoToApp = (Button) findViewById(R.id.btnGoToApp);
+
+        btnGoToApp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this,ChatActivity.class));
+            }
+        });
+
     }
 
     public void handleBtnClick(View v){

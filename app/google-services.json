@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "422752427901",
+    "project_id": "green-code-a514d",
+    "storage_bucket": "green-code-a514d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:422752427901:android:e73ff1fd8f352475533614",
+        "android_client_info": {
+          "package_name": "com.example.greencode"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1IwsGXV6cWulFhZKOen2VhxJulXfbInA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:422752427901:android:df7b69d2eaef5238533614",
+        "android_client_info": {
+          "package_name": "com.example.helloworld"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1IwsGXV6cWulFhZKOen2VhxJulXfbInA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
