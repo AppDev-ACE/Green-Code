@@ -11,14 +11,15 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
 public class ChatAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>{
-    private ArrayList<Message> msgList= new ArrayList<>();
-    private String currentUserId = "user1";
+    private ArrayList<Message> msgList;
+    private String currentUserId;
 
     public ChatAdapter(ArrayList<Message> msgList,String currentUserId){
         this.msgList = msgList;
         this.currentUserId = currentUserId;
     }
 
+    // Function to get sender / receiver (1-> sender, 0->receiver)
     @Override
     public int getItemViewType(int position) {
         if (msgList.get(position).getSenderId().equals(currentUserId)){
@@ -29,6 +30,7 @@ public class ChatAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>{
         }
     }
 
+    // Function to import respective xml files (sender/receiver) based on viewType
     @NonNull
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {

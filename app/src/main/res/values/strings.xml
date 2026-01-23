@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">HelloWorld</string>
+    <string name="PassWord" />
+    <string name="loginButton">Login</string>
+    <string name="email">Email</string>
+    <string name="GreenCode">Green Code</string>
+    <string name="Password">Password</string>
+    <string name="signUpButton">Sign Up</string>
+    <string name="don_t_have_an_account_sign_up">Already an user? Login</string>
 </resources>

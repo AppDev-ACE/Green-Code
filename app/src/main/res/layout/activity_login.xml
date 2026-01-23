@@ -3,52 +3,74 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:orientation="vertical"
-    android:gravity="center"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
+    android:gravity="center"
+    android:orientation="vertical"
     android:padding="15dp"
     tools:context=".Login">
 
     <TextView
-        android:textSize="25sp"
-        android:gravity="center"
-        android:text="@string/GreenCode"
-        android:paddingBottom="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/Email">
+        android:gravity="center"
+        android:paddingBottom="20dp"
+        android:text="@string/GreenCode"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/email"
             android:paddingBottom="20dp"
-            >
-        </com.google.android.material.textfield.TextInputEditText>
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
     </com.google.android.material.textfield.TextInputLayout>
+
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/PassWord"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/PassWord">
+        android:layout_height="wrap_content">
+
         <com.google.android.material.textfield.TextInputEditText
-            android:hint="@string/Password"
+            android:id="@+id/etPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:hint="@string/Password"
+            android:inputType="textPassword"
             android:paddingBottom="20dp"
-            >
-        </com.google.android.material.textfield.TextInputEditText>
+            android:textColor="@color/white" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-
+        android:id="@+id/btnLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/holo_orange_light"
         android:gravity="center"
         android:text="@string/loginButton"
-        android:textStyle="bold"></Button>
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold" />
 
+    <TextView
+        android:id="@+id/tvSignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingTop="15dp"
+        android:text="Don't have an account? Sign Up"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
 
 </LinearLayout>
